@@ -1,8 +1,13 @@
 import React from 'react';
 
 //person is a functional componentent
-const person = () => {
-  return <p>I'm a Person!</p>
+const person = (props) => {
+  return (
+    <div>
+      <p>I'm {props.name} and I am {props.age} years old</p>
+      <p>{props.children}</p>
+    </div>
+  )
 };
 
 export default person;
